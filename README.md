@@ -70,3 +70,5 @@ Place Order: POST http://localhost:5000/api/orders/
 Update Order: PUT http://localhost:5000/api/orders/:id (Admin only)
 
 Get Orders: GET http://localhost:5000/api/orders/
+
+Proof is given in proof folder in given repository.
