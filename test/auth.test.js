@@ -5,8 +5,8 @@ const User = require("../backend/models/User");
 describe("Auth Endpoints", () => {
   it("should register a new user", async () => {
     const res = await request(app).post("/api/auth/register").send({
-      name: "John Doe",
-      email: "john@example.com",
+      name: "newuser",
+      email: "newuser@example.com",
       password: "password123",
       role: "user",
     });
@@ -16,14 +16,14 @@ describe("Auth Endpoints", () => {
 
   it("should login a user and return a token", async () => {
     await User.create({
-      name: "Jane Doe",
-      email: "jane@example.com",
+      name: "newuser",
+      email: "newuser@example.com",
       password: "password123",
       role: "user",
     });
 
     const res = await request(app).post("/api/auth/login").send({
-      email: "jane@example.com",
+      email: "newuser@example.com",
       password: "password123",
     });
     expect(res.statusCode).toBe(200);
