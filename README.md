@@ -46,11 +46,19 @@ POSTMAN Setup
 
 Important API Endpoints
 Register User: POST http://localhost:5000/api/auth/register
+
 Login: POST http://localhost:5000/api/auth/login
+
 Create Product: POST http://localhost:5000/api/products/ (Admin only)
+
 Update Product: PUT http://localhost:5000/api/products/:id (Admin only)
+
 Delete Product: DELETE http://localhost:5000/api/products/:id (Admin only)
+
 Get Products: GET http://localhost:5000/api/products/
+
 Place Order: POST http://localhost:5000/api/orders/
+
 Update Order: PUT http://localhost:5000/api/orders/:id (Admin only)
+
 Get Orders: GET http://localhost:5000/api/orders/
