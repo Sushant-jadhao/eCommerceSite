@@ -1,8 +1,8 @@
 const request = require("supertest");
-const app = require("../backend/server"); // Adjust the path as needed
-const Order = require("../backend/models/Order");
-const Product = require("../backend/models/Product");
-const User = require("../backend/models/User");
+const app = require("../server"); // Adjust the path as needed
+const Order = require("../models/Order");
+const Product = require("../models/Product");
+const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 
 let token;
